@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { getData } from "../api";
-import ship from "./Ship-Triangle-0001.png"
+
+import sun from "../Assets/sun.gif"
 
 function WeatherReport() {
   const [data, setData] = useState([]);
@@ -22,9 +23,10 @@ function WeatherReport() {
                 {item.date + " " + item.temperatureC + "℃ " + item.summary }
             </ul>
         ))}
-        <img src={ship} alt="ship"/>
 
-        <button onClick={fetchData}>Fetch Data</button>
+        <img src={sun} alt="sun"/>
+
+        <button onClick={fetchData}>Get Latest Forecast</button>
         
     </div>
   );
