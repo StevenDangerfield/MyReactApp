@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MyReactAppBackend.Controllers;
+namespace WeatherForecastServer.Controllers;
 
 [ApiController]
 [Route("[controller]")]

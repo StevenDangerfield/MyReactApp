@@ -1,4 +1,4 @@
-namespace MyReactAppBackend;
+namespace WeatherForecastServer;
 
 public class WeatherForecast
 {
