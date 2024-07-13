@@ -3,6 +3,7 @@ import { getData } from "../api";
 import GetForecastButton from "./GetForecastButton";
 
 import sun from "../Assets/sun.gif"
+import WeatherForecastList from "./WeatherForecastList";
 
 function WeatherReport() {
   const [data, setData] = useState([]);
@@ -18,15 +19,9 @@ function WeatherReport() {
 
   return (
     <div>
-        <h1>Weather:</h1>
-        {data.map(item => (
-            <ul>
-                {item.date + " " + item.temperatureC + "℃ " + item.summary }
-            </ul>
-        ))}
-
-        <img src={sun} alt="sun"/>
-        <GetForecastButton fetchData={fetchData}/>
+      <img src={sun} alt="sun"/>
+      <WeatherForecastList data={data}/>  
+      <GetForecastButton fetchData={fetchData}/>
     </div>
   );
 }
