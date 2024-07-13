@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getData } from "../api";
+import GetForecastButton from "./GetForecastButton";
 
 import sun from "../Assets/sun.gif"
 
@@ -25,9 +26,7 @@ function WeatherReport() {
         ))}
 
         <img src={sun} alt="sun"/>
-
-        <button onClick={fetchData}>Get Latest Forecast</button>
-        
+        <GetForecastButton fetchData={fetchData}/>
     </div>
   );
 }
