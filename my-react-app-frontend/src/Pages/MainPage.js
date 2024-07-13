@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import '../App.css';
 import Navigation from '../Components/Navigation';
 import WeatherReport from '../Components/WeatherReport';
-import Phaser from "phaser"
 
 function MainPage() {
   return (
